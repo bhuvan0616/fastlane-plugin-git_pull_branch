@@ -27,17 +27,11 @@ module Fastlane
 
       def self.available_options
         [
-          # FastlaneCore::ConfigItem.new(key: :your_option,
-          #                         env_name: "GIT_PULL_BRANCH_YOUR_OPTION",
-          #                      description: "A description of your option",
-          #                         optional: false,
-          #                             type: String)
-        ]
-      end
-
-      def self.example_code
-        [
-          'git_pull_branch(branch: 'master')'
+          FastlaneCore::ConfigItem.new(key: :branch,
+                                  env_name: "BRANCH_NAME",
+                               description: "The brach name to pull",
+                                  optional: false,
+                                  is_string: false)
         ]
       end
 
