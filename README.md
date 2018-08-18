@@ -12,15 +12,15 @@ fastlane add_plugin git_pull_branch
 
 ## About git_pull_branch
 
-pull code from different branch
-
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+pull code from different branch. git_pull plugin will allow you to pull code from current brach. But this plugin will allow yo to pull from differnt brach.
 
 ## Example
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
 
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
+```
+git_pull_branch(branch: 'master')
+```
 
 ## Run tests for this plugin
 
